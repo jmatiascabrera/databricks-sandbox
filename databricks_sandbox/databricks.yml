@@ -3,6 +3,12 @@
 bundle:
   name: databricks_sandbox
 
+#artifacts:
+#  default:
+#    type: whl
+#    build: poetry build
+
+
 include:
   - resources/*.yml
 
@@ -31,7 +37,7 @@ targets:
     # Doing so enables strict verification of the settings below.
     mode: production
     workspace:
-      host: https://dbc-b8d56e71-1491.cloud.databricks.com
+      host: https://dbc-ed904056-0005.cloud.databricks.com
       # We always use /Users/jmatias@thoughtworks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/jmatias@thoughtworks.com/.bundle/${bundle.name}/${bundle.target}
@@ -39,3 +45,9 @@ targets:
       # This runs as jmatias@thoughtworks.com in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
       user_name: jmatias@thoughtworks.com
+
+
+
+  test:
+    workspace:
+      host: https://dbc-46501af7-1f67.cloud.databricks.com
