@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/databricks-sandbox.iml" filepath="$PROJECT_DIR$/.idea/databricks-sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/databricks_sandbox/databricks_sandbox.iml" filepath="$PROJECT_DIR$/databricks_sandbox/databricks_sandbox.iml" />
     </modules>
   </component>
 </project>
