@@ -1,0 +1,9 @@
+custom_severities:
+  - detector: ShellHistory
+    severity: high
+  - detector: EnvFile
+    severity: high
+scopeconfig:
+  - scope: python
+threshold: medium
+version: "1.0"
